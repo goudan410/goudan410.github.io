@@ -1,0 +1,12 @@
+.about-page { max-width: 650px; }
+.about-page__eyebrow { margin: 0 0 9px; color: #8b8f96; font-size: .8rem; letter-spacing: .08em; }
+.about-page h1 { margin: 0; color: #202124; font-size: 2.25rem; letter-spacing: -.065em; }
+.about-page__card { margin-top: 30px; padding: 32px; border: 1px solid rgba(225, 227, 232, .88); border-radius: 18px; background: rgba(255,255,255,.86); box-shadow: 0 14px 36px rgba(40,50,75,.06); }
+.about-page__intro { display: flex; gap: 18px; align-items: center; }
+.about-page__intro img { width: 70px; height: 70px; border-radius: 50%; object-fit: cover; box-shadow: 0 8px 18px rgba(30,42,65,.15); }
+.about-page__intro h2 { margin: 0; color: #2859b8; font-size: 1.5rem; letter-spacing: -.045em; }
+.about-page__intro p { margin: 4px 0 0; color: #737780; }
+.about-page__card hr { height: 1px; margin: 25px 0; border: 0; background: #e8e9ec; }
+.about-page__card p { color: #555a63; line-height: 1.95; }
+.about-page__card p:last-child { margin-bottom: 0; }
+@media screen and (max-width: 500px) { .about-page__card { padding: 24px; } }
