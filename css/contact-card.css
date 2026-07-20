@@ -1,0 +1,44 @@
+.contact-page { max-width: 620px; }
+.contact-page__eyebrow { margin: 0 0 10px; color: #8b8f96; font-size: .82rem; }
+.contact-page h1 { margin: 0; color: #202124; font-size: 2.25rem; letter-spacing: -.065em; }
+.contact-page__intro { margin: 15px 0 35px; color: #74777d; line-height: 1.8; }
+
+.contact-card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 23px;
+  align-items: center;
+  padding: 29px;
+  border: 1px solid #e8e9ec;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(42, 52, 75, .07);
+}
+
+.contact-card::after {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+  right: -72px;
+  bottom: -117px;
+  border-radius: 50%;
+  background: #dce7ff;
+  content: '';
+  filter: blur(12px);
+  opacity: .7;
+}
+
+.contact-card img { z-index: 1; width: 82px; height: 82px; border: 4px solid #fff; border-radius: 50%; box-shadow: 0 9px 20px rgba(37, 55, 88, .15); object-fit: cover; }
+.contact-card__body { position: relative; z-index: 1; }
+.contact-card__body h2 { margin: 0; color: #2859b8; font-size: 1.85rem; letter-spacing: -.05em; }
+.contact-card__signature { margin: 5px 0 15px; color: #737780; font-size: 1rem; }
+.contact-card__email { display: inline-flex; gap: 8px; align-items: center; padding-bottom: 3px; border-bottom: 1px dashed #9ba3b5; color: #363a42 !important; font-size: .95rem; text-decoration: none; }
+.contact-card__email:hover { color: #2864dc !important; }
+
+@media screen and (max-width: 500px) {
+  .contact-card { gap: 16px; padding: 22px; }
+  .contact-card img { width: 65px; height: 65px; }
+  .contact-card__body h2 { font-size: 1.45rem; }
+  .contact-card__email { font-size: .78rem; }
+}

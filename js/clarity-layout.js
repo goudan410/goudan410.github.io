@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
       `<a href="/archives/" class="${currentPath.startsWith('/archives') ? 'is-current' : ''}"><i class="fa-solid fa-box-archive"></i><span>归档</span></a>`,
       `<a href="/categories/" class="${currentPath.startsWith('/categories') ? 'is-current' : ''}"><i class="fa-regular fa-folder-open"></i><span>分类</span></a>`,
       '<a href="/about/"><i class="fa-regular fa-user"></i><span>关于</span></a>',
+      `<a href="/contact/" class="${currentPath.startsWith('/contact') ? 'is-current' : ''}"><i class="fa-regular fa-envelope"></i><span>联系</span></a>`,
       '</nav>'
     ].join('')
   }
@@ -18,7 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
   if (blogInfo && !document.querySelector('.clarity-sidebar-profile')) {
     const profile = document.createElement('div')
     profile.className = 'clarity-sidebar-profile'
-    profile.innerHTML = '<img src="/img/avatar.jpg" alt="goudan 的头像"><strong>goudan</strong><span>记录思考与日常</span>'
+    profile.innerHTML = [
+      '<div class="clarity-profile__identity">',
+      '<img src="/img/avatar.jpg" alt="goudan 的头像">',
+      '<div><strong>goudan</strong><span>裂空逐星</span></div>',
+      '</div>',
+      '<a class="clarity-profile__email" href="mailto:2312349344@qq.com"><i class="fa-regular fa-envelope"></i>2312349344@qq.com</a>'
+    ].join('')
     document.querySelector('#page-header')?.appendChild(profile)
   }
 
