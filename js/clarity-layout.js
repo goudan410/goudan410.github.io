@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       '<nav class="clarity-nav" aria-label="网站导航">',
       `<a href="/" class="${currentPath === '/' || currentPath === '/index.html' ? 'is-current' : ''}"><i class="fa-regular fa-file-lines"></i><span>文章</span></a>`,
       `<a href="/archives/" class="${currentPath.startsWith('/archives') ? 'is-current' : ''}"><i class="fa-solid fa-box-archive"></i><span>归档</span></a>`,
+      `<a href="/categories/" class="${currentPath.startsWith('/categories') ? 'is-current' : ''}"><i class="fa-regular fa-folder-open"></i><span>分类</span></a>`,
       '<a href="/about/"><i class="fa-regular fa-user"></i><span>关于</span></a>',
       '</nav>'
     ].join('')
