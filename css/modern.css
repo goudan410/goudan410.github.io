@@ -12,7 +12,7 @@
 }
 
 body {
-  background: #f6f7fb;
+  background: linear-gradient(rgba(246, 247, 251, 0.86), rgba(246, 247, 251, 0.86)), url('/img/site-background.png') center / cover fixed;
   color: var(--modern-ink);
 }
 
@@ -20,7 +20,7 @@ body {
 #page-header.post-bg {
   position: relative;
   isolation: isolate;
-  background: linear-gradient(125deg, #111827 0%, #312e81 52%, #0f766e 100%) !important;
+  background: url('/img/site-background.png') center 34% / cover no-repeat !important;
 }
 
 #page-header.full_page::before,
@@ -29,9 +29,8 @@ body {
   z-index: -1;
   inset: 0;
   content: '';
-  opacity: 0.72;
-  background: radial-gradient(circle at 18% 24%, rgba(251, 191, 36, 0.34), transparent 24rem),
-    radial-gradient(circle at 84% 74%, rgba(96, 165, 250, 0.42), transparent 28rem);
+  opacity: 1;
+  background: linear-gradient(125deg, rgba(17, 24, 39, 0.63), rgba(49, 46, 129, 0.42), rgba(15, 118, 110, 0.38));
 }
 
 #nav {
